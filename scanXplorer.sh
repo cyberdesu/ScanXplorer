@@ -55,9 +55,15 @@ if ! command -v subfinder &> /dev/null; then
 fi
 
 # Check if naabu is installed, if not, install it
-if ! command -v subfinder &> /dev/null; then
+if ! command -v naabu &> /dev/null; then
     echo "Installing Naabu..."
     go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
+fi
+
+# Check if httpx is installed, if not, install it
+if ! command -v httpx &> /dev/null; then
+    echo "Installing HTTPX..."
+    go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
 fi
 
 # Step 1: Parse command line arguments
