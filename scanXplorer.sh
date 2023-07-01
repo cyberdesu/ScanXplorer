@@ -92,7 +92,7 @@ if [ -z "$domain" ]; then
     read domain
 fi
 
-# Step 
+# Step 4
 echo "
 Running subfinder and httpx on $domain
 "
