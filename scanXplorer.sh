@@ -18,7 +18,7 @@ echo "$ascii_art"
 
 # Help menu
 display_help() {
-    echo -e "NucleiFuzzer is a Powerful Automation tool for detecting XSS, SQLi, SSRF, Open-Redirect, etc. vulnerabilities in Web Applications\n\n"
+    echo -e "scanXplorer is a Powerful Automation tool for detecting XSS, SQLi, SSRF, Open-Redirect, etc. vulnerabilities in Web Applications\n\n"
     echo -e "Usage: $0 [options]\n\n"
     echo "Options:"
     echo "  -h, --help              Display help information"
@@ -90,7 +90,7 @@ fi
 echo "
 Running subfinder and httpx on $domain
 "
-subfinder -d $domain -silent | ~/go/bin/httpx -silent -o httpx_output.txt
+subfinder -d $domain -silent | naabu -silent | ~/go/bin/httpx -silent -o httpx_output.txt
 
 
 # step 4 
