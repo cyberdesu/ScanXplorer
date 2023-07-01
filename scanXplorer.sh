@@ -87,8 +87,10 @@ if [ -z "$domain" ]; then
 fi
 
 # Step 
-echo "\nRunning subfinder and httpx on $domain"
-subfinder -d $domain | ~/go/bin/httpx -o httpx_output.txt
+echo "
+Running subfinder and httpx on $domain
+"
+subfinder -d $domain -silent | ~/go/bin/httpx -silent -o httpx_output.txt
 
 
 # step 4 
