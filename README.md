@@ -14,7 +14,7 @@ This will display help for the tool. Here are the options it supports.
 
 ```console
 scanXplorer is a Powerful Automation tool for detecting XSS, SQLi, SSRF, Open-Redirect, etc. vulnerabilities in Web Applications
-Usage: ./NucleiFuzzer.sh [options]
+Usage: ./ScanXplorer.sh [options]
 
 Options:
   -h, --help              Display help information
