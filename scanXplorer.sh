@@ -54,17 +54,18 @@ if ! command -v subfinder &> /dev/null; then
     go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 fi
 
+# Check if httpx is installed, if not, install it
+#if ! command -v httpx &> /dev/null; then
+#    echo "Installing HTTPX..."
+#    go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+#
+
 # Check if naabu is installed, if not, install it
 if ! command -v naabu &> /dev/null; then
     echo "Installing Naabu..."
     go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
 fi
-
-# Check if httpx is installed, if not, install it
-if ! command -v httpx &> /dev/null; then
-    echo "Installing HTTPX..."
-    go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
-fi
+go install github.com/projectdiscovery/httpx/cmd/httpx@latest
 
 # Step 1: Parse command line arguments
 while [[ $# -gt 0 ]]
@@ -92,7 +93,7 @@ if [ -z "$domain" ]; then
     read domain
 fi
 
-# Step 4
+# Step 3
 echo "
 Running subfinder and httpx on $domain
 "
