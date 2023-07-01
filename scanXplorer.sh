@@ -18,6 +18,7 @@ echo "$ascii_art"
 
 # Help menu
 display_help() {
+    echo "$ascii_art"
     echo -e "scanXplorer is a Powerful Automation tool for detecting XSS, SQLi, SSRF, Open-Redirect, etc. vulnerabilities in Web Applications\n\n"
     echo -e "Usage: $0 [options]\n\n"
     echo "Options:"
