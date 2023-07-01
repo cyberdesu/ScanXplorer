@@ -110,4 +110,4 @@ echo "Running Nuclei on paramspider_output.txt"
 nuclei -l output/paramspider_output.txt -t "$home_dir/fuzzing-templates" -rl 05 -o nucleiOutput.txt
 
 # Step 6: End with general message as the scan is completed
-echo "Scan is completed - Happy Fuzzing"
+echo "Scan is completed - Happy hunting:)"
