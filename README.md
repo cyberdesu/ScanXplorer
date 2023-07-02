@@ -25,7 +25,7 @@ This will display help for the tool. Here are the options it supports.
 scanXplorer is a Powerful Automation tool for detecting XSS, SQLi, SSRF, Open-Redirect, etc. vulnerabilities in Web Applications
 
 
-Usage: ./coba.sh [options]
+Usage: ./scanXplorer.sh [options]
 
 
 Options:
@@ -35,4 +35,4 @@ Options:
 
 Made by
 `Suredsi Ulpada` | `cyberdesu` \
-A `Security Researcher` and `Bug Hunter` \
+A `Security Researcher` and `Bug Hunter`
